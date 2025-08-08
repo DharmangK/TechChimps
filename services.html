@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Services | WebDevLocal</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .service-card .service-price {
+      display: block;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #ff9800;
+      margin-bottom: 0.5rem;
+      margin-top: 0.2rem;
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 600px) {
+      .service-card .service-price {
+        font-size: 0.97rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -40,26 +56,31 @@
         <div class="services-list">
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🎨</div>
+            <span class="service-price">$499+</span>
             <h3>Custom Website Design</h3>
             <p>Unique, modern designs tailored to your business identity and goals.</p>
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">📱</div>
+            <span class="service-price">$249+</span>
             <h3>Responsive Development</h3>
             <p>Websites that look and perform great on phones, tablets, and laptops.</p>
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🔍</div>
+            <span class="service-price">$199+</span>
             <h3>SEO Optimization</h3>
             <p>Boost your online presence with search engine optimized solutions.</p>
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🔧</div>
+            <span class="service-price">$79/mo</span>
             <h3>Support & Maintenance</h3>
             <p>Ongoing support and updates to keep your website fresh and secure.</p>
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🧪</div>
+            <span class="service-price">$99</span>
             <h3>Website Audits</h3>
             <p>Our basic website audit quickly identifies common issues that hurt user experience and rankings.</p>
           </div>
@@ -69,6 +90,7 @@
         <div class="services-list">
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">💻</div>
+            <span class="service-price">$149</span>
             <h3>New Computer Setup & Configuration</h3>
             <p>
               Complete setup including software installation, user accounts, Wi-Fi connection, and peripheral integration.
@@ -76,6 +98,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🛠</div>
+            <span class="service-price">$89/hr</span>
             <h3>Software & Printer Support</h3>
             <p>
               Install and update software, connect printers, resolve driver issues, and fix common printing problems.
@@ -83,6 +106,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🌐</div>
+            <span class="service-price">$119</span>
             <h3>Network & Email Help</h3>
             <p>
               Troubleshoot Wi-Fi connectivity, set up email accounts, and resolve sync or login issues.
@@ -90,6 +114,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🔒</div>
+            <span class="service-price">$99</span>
             <h3>Security & Backup Solutions</h3>
             <p>
               Remove basic viruses, install antivirus software, and set up cloud or external data backups.
@@ -101,6 +126,7 @@
         <div class="services-list">
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🧳</div>
+            <span class="service-price">$129/hr</span>
             <h3>Computer Disassembly & Reassembly</h3>
             <p>
               Safely unplug, label, pack, and reassemble computers and accessories during home or office moves.
@@ -108,6 +134,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🔌</div>
+            <span class="service-price">$99/hr</span>
             <h3>Network Cable Management</h3>
             <p>
               Organize, label, and neatly route cables to ensure a clean and functional setup post-move.
@@ -115,6 +142,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🏠</div>
+            <span class="service-price">$119+</span>
             <h3>Smart Home System Setup</h3>
             <p>
               Reconnect smart lights, speakers, thermostats, and other IoT devices at your new location.
@@ -122,6 +150,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🖨</div>
+            <span class="service-price">$89/hr</span>
             <h3>Peripheral Device Reconnection</h3>
             <p>
               Set up printers, external drives, webcams, and other devices after a relocation.
@@ -129,6 +158,7 @@
           </div>
           <div class="service-card">
             <div style="font-size: 2.5rem; margin-bottom: 0.7rem;">🌐</div>
+            <span class="service-price">$99</span>
             <h3>Basic Network Setup at New Location</h3>
             <p>
               Connect routers, modems, and ensure all devices have stable Wi-Fi or Ethernet access.
