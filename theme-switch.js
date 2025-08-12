@@ -12,4 +12,20 @@
   //   const current = document.documentElement.getAttribute('data-theme');
   //   setTheme(current === 'light' ? 'dark' : 'light');
   // };
+
+  // Show/hide button on scroll
+window.onscroll = function() {
+  const btn = document.getElementById("scrollUpBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top when clicked
+document.getElementById("scrollUpBtn").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 })();

@@ -280,3 +280,23 @@ html, body {
 [data-theme="dark"] .contact {
   background: var(--bg-dark);
 }
+#scrollUpBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  font-size: 2rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 15px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: background 0.2s;
+}
+#scrollUpBtn:hover {
+  background: #555;
+}
