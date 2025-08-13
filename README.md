@@ -6,4 +6,4 @@ Website development files
 - [ ] Finish Service Page
 - [ ] Rotating Cards on Home Page
 - [ ] site map
-- [ ] button to help scroll to the top 
+- [X] button to help scroll to the top 
