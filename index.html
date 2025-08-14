@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Website Development for Local Businesses</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -18,7 +19,7 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -31,7 +32,6 @@
           <a href="#contact" class="cta-btn">Get Started</a>
         </div>
         <div class="hero-img">
-          <!-- https://source.unsplash.com/600x400/?business,website -->
           <img src="https://ewm.swiss/application/files/1616/7144/5870/web_design_EWM_SA_Digital_Marketing_Agency_Geneva_SA.jpg" alt="Business website placeholder" width="600" height="400" />
         </div>
       </div>
@@ -69,7 +69,7 @@
 
     <section class="why-us" id="why-us">
       <div class="container">
-        <h2>Why Choose Us?</h2>
+        <h2>About Us</h2>
         <div class="why-list">
           <div class="why-card">
             <img src="https://media.istockphoto.com/id/1127448343/photo/partnership-of-business-concept.jpg?s=612x612&w=0&k=20&c=HJx6uc0R-pkASmf6H6psyZH8qhNXwNZ12k8TfnVWKQY=" alt="Local Expertise placeholder" />
@@ -114,10 +114,20 @@
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
       <p>&copy; 2025 WebDevLocal. All rights reserved.</p>
     </div>
   </footer>
   <script src="theme-switch.js"></script>
-  <button id="scrollUpBtn" title="Go to top">&#8679;</button>
+  <button id="scrollUpBtn" title="Go to top" aria-label="Go to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4c.28 0 .53.11.71.29l7 7a1 1 0 01-1.42 1.42L13 7.41V20a1 1 0 01-2 0V7.41l-5.29 5.3A1 1 0 014.29 11.3l7-7A1 1 0 0112 4z" fill="#fff"/>
+    </svg>
+  </button>
 </body>
 </html>
