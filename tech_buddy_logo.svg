@@ -1,0 +1,9 @@
+<svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="280" height="80" rx="12" fill="#6058f4"/>
+  <text x="20" y="35" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="24" fill="#ffffff" font-weight="bold">
+    Tech Buddy
+  </text>
+  <text x="20" y="60" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="14" fill="#2fe5a7">
+    Your Local IT Partner
+  </text>
+</svg>

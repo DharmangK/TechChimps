@@ -219,7 +219,41 @@ html, body {
   font-size: 1rem;
   color: #757391;
 }
-
+.service-card, .service-price {
+      display: block;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+      margin-top: 0.2rem;
+      letter-spacing: 0.01em;
+    }
+    .logo-img {
+      height: 48px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .logo-text {
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      font-family: inherit;
+      color: inherit;
+      vertical-align: middle;
+    }
+    @media (max-width: 600px) {
+      .service-card .service-price {
+        font-size: 0.97rem;
+      }
+      .logo-img {
+        height: 36px;
+        margin-right: 7px;
+      }
+      .logo-text {
+        font-size: 1.25rem;
+      }
+    }
+	
 .contact-form {
   max-width: 400px;
   margin: 0 auto;
@@ -365,3 +399,172 @@ html, body {
   margin: 0 auto;
   padding: 0;
 }
+    /* ---- Carousel Styles ---- */
+    .carousel-container {
+      position: relative;
+      max-width: 1040px;
+      margin: 2.5rem auto 0 auto;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+    .carousel-card {
+      width: 100%;
+      min-height: 200px;
+      background: var(--card-bg-light);
+      border-radius: 2rem;
+      box-shadow: var(--shadow);
+      padding: 3.3rem 3.8rem 2.5rem 3.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      transition: box-shadow 0.25s, transform 0.2s;
+      font-size: 1.5rem;
+      color: #333;
+      position: relative;
+      min-width: 0;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .carousel-card .carousel-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    .carousel-card .carousel-desc {
+      font-size: 1.23rem;
+      color: #757391;
+      margin-bottom: 2.3rem;
+      font-weight: 500;
+    }
+    .carousel-card .carousel-btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+    /* Remove arrows */
+    .carousel-arrow {
+      display: none !important;
+    }
+    @media (max-width: 1200px) {
+      .carousel-container, .carousel-card {
+        max-width: 96vw;
+      }
+    }
+    @media (max-width: 900px) {
+      .carousel-container {
+        max-width: 99vw;
+      }
+      .carousel-card {
+        padding: 1.6rem 1.1rem 1.1rem 1.1rem;
+        font-size: 1.1rem;
+      }
+      .carousel-card .carousel-title {
+        font-size: 1.15rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-card {
+        min-height: 210px;
+      }
+    }
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.1rem;
+    }
+    .carousel-indicator {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--primary-dark);
+      opacity: 0.25;
+      transition: opacity 0.16s, background 0.16s;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .carousel-indicator.active {
+      opacity: 0.9;
+      background: var(--accent);
+      border: 2px solid var(--primary-dark);
+    }
+    /* ---- End Carousel Styles ---- */
+	
+	.why-feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.7rem;
+      display: inline-block;
+    }
+    .testimonial-card {
+      background: var(--card-bg-light);
+      border-radius: 1.2rem;
+      box-shadow: var(--shadow);
+      max-width: 340px;
+      margin: 0.5rem;
+      padding: 1.3rem 1.1rem 1rem 1.1rem;
+      text-align: left;
+      font-style: italic;
+      transition: transform 0.2s;
+      color: #757391;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-3px) scale(1.03);
+    }
+    .testimonial-author {
+      font-style: normal;
+      font-weight: 600;
+      margin-top: 0.9rem;
+      color: var(--primary);
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 2rem auto 0 auto;
+      padding: 0;
+    }
+    .faq-item {
+      margin-bottom: 1.3rem;
+      background: var(--card-bg-light);
+      border-radius: 0.7rem;
+      box-shadow: var(--shadow);
+      padding: 1rem 1.4rem;
+    }
+    .faq-question {
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+      color: var(--primary);
+    }
+    section h2 {
+      color: var(--primary-dark);
+    }
+    [data-theme="dark"] section h2 {
+      color: var(--accent);
+    }
+    .logo-img {
+      height: 48px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .logo-text {
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      font-family: inherit;
+      color: inherit;
+      vertical-align: middle;
+    }
+    @media (max-width: 600px) {
+      .logo-img {
+        height: 36px;
+        margin-right: 7px;
+      }
+      .logo-text {
+        font-size: 1.25rem;
+      }
+    }

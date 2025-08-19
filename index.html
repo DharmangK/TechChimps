@@ -11,11 +11,13 @@
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <div class="logo">
-          <a href="index.html" style="text-decoration: none; color: inherit;">
-            <span>WebDev<span class="highlight">Local</span></span>
+	  <a href="index.html"><img src="logo_clear2.png" alt="Tech Buddy Logo" style="height: 70px;" /></a>
+        <!-- <div class="logo">
+          <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <img src="logo-tech-buddy.svg" alt="Tech Buddy Logo" class="logo-img" />
+            <span class="logo-text">Tech Buddy</span>
           </a>
-        </div>
+        </div> -->
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
@@ -24,15 +26,41 @@
         </ul>
       </nav>
       <div class="hero">
-        <div class="hero-content">
-          <h1>Custom Website Development<br>for Local Businesses</h1>
-          <p>
-            We help local businesses grow by building modern, responsive websites tailored to your needs and brand.
-          </p>
-          <a href="#contact" class="cta-btn">Get Started</a>
-        </div>
-        <div class="hero-img">
-          <img src="https://ewm.swiss/application/files/1616/7144/5870/web_design_EWM_SA_Digital_Marketing_Agency_Geneva_SA.jpg" alt="Business website placeholder" width="600" height="400" />
+        <div class="hero-content" style="width:100%;">
+          <div class="carousel-container" id="hero-carousel">
+            <!-- Cards -->
+            <div class="carousel-card" data-index="0" style="display: flex;">
+              <div class="carousel-title">Custom Website Development<br>for Local Businesses</div>
+              <div class="carousel-desc">
+                We help local businesses grow by building modern, responsive websites tailored to your needs and brand.
+              </div>
+              <a href="#contact" class="cta-btn carousel-btn">Get Started</a>
+            </div>
+            <div class="carousel-card" data-index="1" style="display: none;">
+              <div class="carousel-title">🎉 Promotions: Save 20% This Month!</div>
+              <div class="carousel-desc">
+                Summer Special: Launch your new website and get 20% off any development package. Let Tech Buddy put your business online for less!
+              </div>
+              <a href="#contact" class="cta-btn carousel-btn">Claim Offer</a>
+            </div>
+            <div class="carousel-card" data-index="2" style="display: none;">
+              <div class="carousel-title">🌟 What Makes Us Different?</div>
+              <div class="carousel-desc">
+                Local expertise, personal support, and affordable pricing—no templates, no hidden fees. We build sites that work for your community.
+              </div>
+              <a href="about-us.html" class="cta-btn carousel-btn">About Tech Buddy</a>
+            </div>
+            <div class="carousel-card" data-index="3" style="display: none;">
+              <div class="carousel-title">🛟 Need Help With Tech?</div>
+              <div class="carousel-desc">
+                We also offer IT setup and support—computers, networks, email, and more. Get friendly help for your business technology!
+              </div>
+              <a href="services.html" class="cta-btn carousel-btn">See IT Services</a>
+            </div>
+          </div>
+          <div class="carousel-indicators" id="carousel-indicators">
+            <!-- Dots will be injected by JS -->
+          </div>
         </div>
       </div>
     </div>
@@ -120,10 +148,11 @@
         <a href="about-us.html">About Us</a>
         <a href="#contact">Contact</a>
       </div>
-      <p>&copy; 2025 WebDevLocal. All rights reserved.</p>
+      <p>&copy; 2025 Tech Buddy. All rights reserved.</p>
     </div>
   </footer>
   <script src="theme-switch.js"></script>
+  <script src="carousel.js"></script>
   <button id="scrollUpBtn" title="Go to top" aria-label="Go to top">
     <svg viewBox="0 0 24 24">
       <path d="M12 4c.28 0 .53.11.71.29l7 7a1 1 0 01-1.42 1.42L13 7.41V20a1 1 0 01-2 0V7.41l-5.29 5.3A1 1 0 014.29 11.3l7-7A1 1 0 0112 4z" fill="#fff"/>
