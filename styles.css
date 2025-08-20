@@ -254,6 +254,64 @@ html, body {
       }
     }
 	
+/* Centered, RTL-safe read-more button inside .service-card */
+
+/* ensure the card is a positioned container */
+section.services .service-card {
+  position: relative;
+  padding-bottom: 3rem; /* space for the absolutely positioned button */
+}
+
+/* physical fallbacks first, then logical properties (preferred) */
+.read-more-btn {
+  position: absolute;
+
+  /* physical fallback for older browsers */
+  left: 50%;
+  bottom: 1rem;
+
+  /* logical (preferred) - adapts for LTR/RTL */
+  inset-inline-start: 50%;   /* inline-start == left in LTR, right in RTL */
+  inset-block-end: 1rem;     /* block-end == bottom */
+
+  /* center using transform (no logical transform exists yet) */
+  transform: translateX(-50%);
+
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+
+  /* theme-consistent look (matches .cta-btn accent/gradient) */
+  background: linear-gradient(90deg, var(--accent) 0%, #9bf6e7 100%);
+  color: var(--primary-dark);
+  box-shadow: var(--shadow);
+  transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+}
+
+/* Hover/focus */
+.read-more-btn:hover,
+.read-more-btn:focus {
+  transform: translateX(-50%) translateY(-2px); /* keep center + small uplift */
+  box-shadow: 0 8px 24px rgba(47,229,167,0.12);
+  opacity: 0.98;
+}
+
+/* mobile adjustments */
+@media (max-width: 600px) {
+  .read-more-btn {
+    inset-inline-start: 50%;
+    inset-block-end: 0.8rem;
+    transform: translateX(-50%);
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Contact Form CSS */	
 .contact-form {
   max-width: 400px;
   margin: 0 auto;
