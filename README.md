@@ -3,7 +3,8 @@ Website development files
 
 # Project Todo List
 
-- [ ] Finish Service Page
+- [X] Finish Service Page
 - [X] Rotating Cards on Home Page
 - [ ] site map
-- [X] button to help scroll to the top 
+- [X] button to help scroll to the top
+- [X] Home Page - Update Service Section + About Us.
