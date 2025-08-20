@@ -3,7 +3,7 @@ Website development files
 
 # Project Todo List
 
-- [ ] Finish Service Page - Remove the $ amounts.
+- [X] Finish Service Page - Remove the $ amounts.
 - [X] Rotating Cards on Home Page
 - [ ] site map
 - [X] button to help scroll to the top
