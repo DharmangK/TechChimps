@@ -336,7 +336,7 @@ section.services .service-card {
   border-radius: 0.6rem;
   border: 1.5px solid #d1d7e6;
   background: #f7faff;
-  color: var(--text-light);
+  color: #000;
   resize: vertical;
   font-family: inherit;
   transition: border 0.17s;
@@ -626,3 +626,28 @@ section.services .service-card {
         font-size: 1.25rem;
       }
     }
+	/* ---- popup msg for sending email ---- */
+	 .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .modal {
+      background: #fff;
+      padding: 18px;
+      max-width: 520px;
+      width: calc(100% - 40px);
+      border-radius: 8px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+      font-family: inherit;
+    }
+    .modal h2 { margin: 0 0 8px 0; font-size: 18px; }
+    .modal p { margin: 0 0 12px 0; color: #333; white-space: pre-wrap; }
+    .modal .actions { text-align: right; }
+    .modal .actions button { padding: 8px 12px; cursor: pointer; }
+    /* Small utility to ensure focus outline is visible */
+    :focus { outline: 3px solid rgba(21,156,228,0.35); outline-offset: 2px; }

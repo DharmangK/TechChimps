@@ -136,7 +136,7 @@
     <section class="contact" id="contact">
       <div class="container">
         <h2>Contact Us</h2>
-        <form class="contact-form">
+        <form id="contact-form" class="contact-form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required />
           
@@ -153,6 +153,24 @@
         </form>
       </div>
     </section>
+	
+	
+	<noscript>
+        <p>Please enable JavaScript to open your mail app directly from this form. Alternatively, send an email to <a href="mailto:fuelgreenev@gmail.com">fuelgreenev@gmail.com</a>.</p>
+    </noscript>
+	  	<!-- Modal that informs the user the mail composer opened -->
+<div id="mailtoModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="mailtoModalTitle" style="display:none;align-items:center;justify-content:center;">
+  <div class="modal" role="document" style="max-width:420px;padding:18px;border-radius:8px;background:#fff;box-shadow:0 8px 28px rgba(0,0,0,0.25);">
+    <h2 id="mailtoModalTitle" style="margin:0 0 8px 0;font-size:18px;">Message composer opened</h2>
+    <p id="mailtoModalText" style="margin:0 0 12px 0;color:#333;">
+      Your default mail app should have opened. Please review and send the message from your mail app. After sending (or if you close the mail app), click OK to return to the homepage.
+    </p>
+    <div class="actions" style="text-align:right;">
+      <button id="modalOk" aria-label="Close" style="padding:8px 12px;cursor:pointer;">OK</button>
+    </div>
+  </div>
+</div>
+
   </main>
 
   <footer class="footer">
@@ -166,6 +184,8 @@
       <p>&copy; 2025 Tech Buddy. All rights reserved.</p>
     </div>
   </footer>
+  
+  <script src="mailto.js"></script>
   <script src="theme-switch.js"></script>
   <script src="carousel.js"></script>
   <button id="scrollUpBtn" title="Go to top" aria-label="Go to top">
@@ -173,5 +193,6 @@
       <path d="M12 4c.28 0 .53.11.71.29l7 7a1 1 0 01-1.42 1.42L13 7.41V20a1 1 0 01-2 0V7.41l-5.29 5.3A1 1 0 014.29 11.3l7-7A1 1 0 0112 4z" fill="#fff"/>
     </svg>
   </button>
+
 </body>
 </html>
