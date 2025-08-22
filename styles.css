@@ -1,15 +1,15 @@
 :root {
-  --primary: #6058f4;                  /* Muted Purple */
-  --primary-dark: #3a34a8;             /* Deep Navy */
-  --accent: #2fe5a7;                   /* Mint */
+  --primary: #fff176;                  /* Light Banana Yellow */
+  --primary-dark: #fdd835;             /* Slightly deeper Yellow for hover/contrast */
+  --accent: #333333;                   /* Dark Gray */
   --bg-light: #f5f7fa;                 /* Soft Gray */
   --bg-dark: #20203c;                  /* Deep Navy */
-  --text-light: #fff;                  /* White for text */
-  --text-dark: #ececff;                /* Soft Gray for dark mode text */
+  --text-light: #444;                  /* Dark gray for text */
+  --text-dark: #ececff;                /* Soft White for dark mode text */
   --card-bg-light: #fff;
   --card-bg-dark: #23243b;
   --border: #e0e3ec;
-  --shadow: 0 2px 14px rgba(96,88,244,0.09), 0 1.5px 8px rgba(0,0,0,0.04);
+  --shadow: 0 2px 14px rgba(0,0,0,0.06), 0 1.5px 8px rgba(0,0,0,0.03);
 }
 
 [data-theme="dark"] {
@@ -39,11 +39,11 @@ html, body {
 
 /* HEADER & NAV */
 .header {
-  background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+  background: linear-gradient(90deg, #20203c 0%, #333333 100%); /* Navy Blue gradient */
   color: #fff;
   padding-bottom: 2rem;
   border-radius: 0 0 2rem 2rem;
-  box-shadow: 0 3px 24px rgba(96,88,244,0.13);
+  box-shadow: 0 3px 24px rgba(32,32,60,0.13);
 }
 
 .navbar {
@@ -61,7 +61,7 @@ html, body {
 }
 
 .logo .highlight {
-  color: var(--accent);
+  color: var(--primary); /* Light Yellow */
 }
 
 .nav-links {
@@ -84,8 +84,8 @@ html, body {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background: var(--accent);
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: var(--accent);
 }
 
 /* HERO */
@@ -117,8 +117,8 @@ html, body {
 }
 
 .cta-btn {
-  background: linear-gradient(90deg, var(--accent) 0%, #9bf6e7 100%);
-  color: #20203a;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--accent);
   padding: 0.8em 2em;
   border: none;
   border-radius: 999px;
@@ -133,8 +133,8 @@ html, body {
 }
 .cta-btn:hover,
 .cta-btn:focus {
-  background: linear-gradient(90deg, #9bf6e7 0%, var(--accent) 100%);
-  color: var(--primary);
+  background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: var(--accent);
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -147,7 +147,7 @@ html, body {
   width: 100%;
   max-width: 420px;
   border-radius: 1.5rem;
-  box-shadow: 0 8px 36px rgba(96,88,244,0.13);
+  box-shadow: 0 8px 36px rgba(0,0,0,0.13);
   object-fit: cover;
 }
 
@@ -161,7 +161,7 @@ html, body {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--primary-dark);
+  color: var(--accent);
   font-weight: 800;
   letter-spacing: 0.01em;
 }
@@ -170,7 +170,7 @@ html, body {
 [data-theme="dark"] .why-us h2,
 [data-theme="dark"] .contact h2,
 [data-theme="dark"] section h2 {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .services-list, .why-list {
@@ -194,8 +194,8 @@ html, body {
 
 .service-card:hover, .why-card:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 10px 36px rgba(47,229,167,0.11), 0 2px 10px rgba(0,0,0,0.06);
-  border: 1.5px solid var(--accent);
+  box-shadow: 0 10px 36px rgba(255,241,118,0.11), 0 2px 10px rgba(0,0,0,0.06);
+  border: 1.5px solid var(--primary);
 }
 
 .service-card img, .why-card img {
@@ -204,7 +204,7 @@ html, body {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 9px rgba(96,88,244,0.06);
+  box-shadow: 0 2px 9px rgba(0,0,0,0.06);
   border: 2px solid var(--primary);
 }
 
@@ -212,7 +212,7 @@ html, body {
   font-size: 1.18rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--accent);
 }
 
 .service-card p, .why-card p {
@@ -253,7 +253,7 @@ html, body {
         font-size: 1.25rem;
       }
     }
-	
+
 /* Centered, RTL-safe read-more button inside .service-card */
 
 /* ensure the card is a positioned container */
@@ -286,8 +286,8 @@ section.services .service-card {
   cursor: pointer;
 
   /* theme-consistent look (matches .cta-btn accent/gradient) */
-  background: linear-gradient(90deg, var(--accent) 0%, #9bf6e7 100%);
-  color: var(--primary-dark);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--accent);
   box-shadow: var(--shadow);
   transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
 }
@@ -296,7 +296,7 @@ section.services .service-card {
 .read-more-btn:hover,
 .read-more-btn:focus {
   transform: translateX(-50%) translateY(-2px); /* keep center + small uplift */
-  box-shadow: 0 8px 24px rgba(47,229,167,0.12);
+  box-shadow: 0 8px 24px rgba(255,241,118,0.12);
   opacity: 0.98;
 }
 
@@ -311,7 +311,7 @@ section.services .service-card {
   }
 }
 
-/* Contact Form CSS */	
+/* Contact Form CSS */
 .contact-form {
   max-width: 400px;
   margin: 0 auto;
@@ -327,7 +327,7 @@ section.services .service-card {
 .contact-form label {
   font-weight: 600;
   margin-bottom: 0.2rem;
-  color: var(--primary-dark);
+  color: var(--accent);
 }
 .contact-form input,
 .contact-form textarea {
@@ -343,7 +343,7 @@ section.services .service-card {
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border: 1.5px solid var(--accent);
+  border: 1.5px solid var(--primary);
   outline: none;
   background: #fff;
 }
@@ -354,7 +354,7 @@ section.services .service-card {
 
 /* FOOTER */
 .footer {
-  background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+  background: linear-gradient(90deg, #20203c, #333333);
   color: #fff;
   text-align: center;
   padding: 1.2rem 0;
@@ -414,8 +414,8 @@ section.services .service-card {
   color: var(--text-dark);
   border: 1.5px solid var(--border);
 }
-[data-theme="dark"] .services, 
-[data-theme="dark"] .why-us, 
+[data-theme="dark"] .services,
+[data-theme="dark"] .why-us,
 [data-theme="dark"] .contact {
   background: var(--bg-dark);
 }
@@ -429,8 +429,8 @@ section.services .service-card {
   z-index: 1000;
   width: 58px;
   height: 58px;
-  background: var(--primary-dark);
-  color: #fff;
+  background: var(--accent);
+  color: var(--primary);
   border: none;
   outline: none;
   border-radius: 50%;
@@ -444,8 +444,8 @@ section.services .service-card {
 }
 
 #scrollUpBtn:hover {
-  background: var(--accent);
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: var(--accent);
   transform: scale(1.12);
 }
 
@@ -453,114 +453,114 @@ section.services .service-card {
   width: 28px;
   height: 28px;
   display: block;
-  fill: #fff;
+  fill: var(--accent);
   margin: 0 auto;
   padding: 0;
 }
-    /* ---- Carousel Styles ---- */
-    .carousel-container {
-      position: relative;
-      max-width: 1040px;
-      margin: 2.5rem auto 0 auto;
-      min-height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2;
-    }
-    .carousel-card {
-      width: 100%;
-      min-height: 200px;
-      background: var(--card-bg-light);
-      border-radius: 2rem;
-      box-shadow: var(--shadow);
-      padding: 3.3rem 3.8rem 2.5rem 3.8rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      transition: box-shadow 0.25s, transform 0.2s;
-      font-size: 1.5rem;
-      color: #333;
-      position: relative;
-      min-width: 0;
-      max-width: 1040px;
-      margin: 0 auto;
-    }
-    .carousel-card .carousel-title {
-      font-size: 2.3rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-      margin-bottom: 1.2rem;
-      line-height: 1.2;
-    }
-    .carousel-card .carousel-desc {
-      font-size: 1.23rem;
-      color: #757391;
-      margin-bottom: 2.3rem;
-      font-weight: 500;
-    }
-    .carousel-card .carousel-btn {
-      margin-top: auto;
-      align-self: flex-start;
-    }
-    /* Remove arrows */
-    .carousel-arrow {
-      display: none !important;
-    }
-    @media (max-width: 1200px) {
-      .carousel-container, .carousel-card {
-        max-width: 96vw;
-      }
-    }
-    @media (max-width: 900px) {
-      .carousel-container {
-        max-width: 99vw;
-      }
-      .carousel-card {
-        padding: 1.6rem 1.1rem 1.1rem 1.1rem;
-        font-size: 1.1rem;
-      }
-      .carousel-card .carousel-title {
-        font-size: 1.15rem;
-        margin-bottom: 0.9rem;
-      }
-    }
-    @media (max-width: 600px) {
-      .carousel-card {
-        min-height: 210px;
-      }
-    }
-    .carousel-indicators {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0.4rem;
-      margin-top: 1.1rem;
-    }
-    .carousel-indicator {
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: var(--primary-dark);
-      opacity: 0.25;
-      transition: opacity 0.16s, background 0.16s;
-      cursor: pointer;
-      border: 2px solid transparent;
-    }
-    .carousel-indicator.active {
-      opacity: 0.9;
-      background: var(--accent);
-      border: 2px solid var(--primary-dark);
-    }
-    /* ---- End Carousel Styles ---- */
-	
-	.why-feature-icon {
+
+/* ---- Carousel Styles ---- */
+.carousel-container {
+  position: relative;
+  max-width: 1040px;
+  margin: 2.5rem auto 0 auto;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.carousel-card {
+  width: 100%;
+  min-height: 200px;
+  background: var(--card-bg-light);
+  border-radius: 2rem;
+  box-shadow: var(--shadow);
+  padding: 3.3rem 3.8rem 2.5rem 3.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: box-shadow 0.25s, transform 0.2s;
+  font-size: 1.5rem;
+  color: #333;
+  position: relative;
+  min-width: 0;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.carousel-card .carousel-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+.carousel-card .carousel-desc {
+  font-size: 1.23rem;
+  color: #757391;
+  margin-bottom: 2.3rem;
+  font-weight: 500;
+}
+.carousel-card .carousel-btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+/* Remove arrows */
+.carousel-arrow {
+  display: none !important;
+}
+@media (max-width: 1200px) {
+  .carousel-container, .carousel-card {
+    max-width: 96vw;
+  }
+}
+@media (max-width: 900px) {
+  .carousel-container {
+    max-width: 99vw;
+  }
+  .carousel-card {
+    padding: 1.6rem 1.1rem 1.1rem 1.1rem;
+    font-size: 1.1rem;
+  }
+  .carousel-card .carousel-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-card {
+    min-height: 210px;
+  }
+}
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.1rem;
+}
+.carousel-indicator {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transition: opacity 0.16s, background 0.16s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.carousel-indicator.active {
+  opacity: 0.9;
+  background: var(--primary);
+  border: 2px solid var(--accent);
+}
+/* ---- End Carousel Styles ---- */
+
+.why-feature-icon {
       font-size: 2.5rem;
       margin-bottom: 0.7rem;
       display: inline-block;
-    }
-    .testimonial-card {
+}
+.testimonial-card {
       background: var(--card-bg-light);
       border-radius: 1.2rem;
       box-shadow: var(--shadow);
@@ -571,53 +571,53 @@ section.services .service-card {
       font-style: italic;
       transition: transform 0.2s;
       color: #757391;
-    }
-    .testimonial-card:hover {
+}
+.testimonial-card:hover {
       transform: translateY(-3px) scale(1.03);
-    }
-    .testimonial-author {
+}
+.testimonial-author {
       font-style: normal;
       font-weight: 600;
       margin-top: 0.9rem;
       color: var(--primary);
-    }
-    .faq-list {
+}
+.faq-list {
       max-width: 800px;
       margin: 2rem auto 0 auto;
       padding: 0;
-    }
-    .faq-item {
+}
+.faq-item {
       margin-bottom: 1.3rem;
       background: var(--card-bg-light);
       border-radius: 0.7rem;
       box-shadow: var(--shadow);
       padding: 1rem 1.4rem;
-    }
-    .faq-question {
+}
+.faq-question {
       font-weight: bold;
       margin-bottom: 0.4rem;
       color: var(--primary);
-    }
-    section h2 {
-      color: var(--primary-dark);
-    }
-    [data-theme="dark"] section h2 {
+}
+section h2 {
       color: var(--accent);
-    }
-    .logo-img {
+}
+[data-theme="dark"] section h2 {
+      color: var(--primary);
+}
+.logo-img {
       height: 48px;
       vertical-align: middle;
       margin-right: 10px;
-    }
-    .logo-text {
+}
+.logo-text {
       font-size: 1.7rem;
       font-weight: bold;
       letter-spacing: 1.5px;
       font-family: inherit;
       color: inherit;
       vertical-align: middle;
-    }
-    @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
       .logo-img {
         height: 36px;
         margin-right: 7px;
@@ -625,9 +625,9 @@ section.services .service-card {
       .logo-text {
         font-size: 1.25rem;
       }
-    }
-	/* ---- popup msg for sending email ---- */
-	 .modal-backdrop {
+}
+/* ---- popup msg for sending email ---- */
+.modal-backdrop {
       position: fixed;
       inset: 0;
       background: rgba(0,0,0,0.45);
@@ -635,8 +635,8 @@ section.services .service-card {
       align-items: center;
       justify-content: center;
       z-index: 1000;
-    }
-    .modal {
+}
+.modal {
       background: #fff;
       padding: 18px;
       max-width: 520px;
@@ -644,10 +644,10 @@ section.services .service-card {
       border-radius: 8px;
       box-shadow: 0 8px 28px rgba(0,0,0,0.25);
       font-family: inherit;
-    }
-    .modal h2 { margin: 0 0 8px 0; font-size: 18px; }
-    .modal p { margin: 0 0 12px 0; color: #333; white-space: pre-wrap; }
-    .modal .actions { text-align: right; }
-    .modal .actions button { padding: 8px 12px; cursor: pointer; }
-    /* Small utility to ensure focus outline is visible */
-    :focus { outline: 3px solid rgba(21,156,228,0.35); outline-offset: 2px; }
+}
+.modal h2 { margin: 0 0 8px 0; font-size: 18px; }
+.modal p { margin: 0 0 12px 0; color: #333; white-space: pre-wrap; }
+.modal .actions { text-align: right; }
+.modal .actions button { padding: 8px 12px; cursor: pointer; }
+/* Small utility to ensure focus outline is visible */
+:focus { outline: 3px solid rgba(21,156,228,0.35); outline-offset: 2px; }
