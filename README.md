@@ -8,3 +8,6 @@ Website development files
 - [ ] site map
 - [X] button to help scroll to the top
 - [X] Home Page - Update Service Section + About Us.
+- [ ] Chang the Dark Theme Colors
+- [ ] Publish the site as github sites
+- [ ] domain change
