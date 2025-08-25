@@ -1,7 +1,7 @@
 :root {
   /* Core brand colors (Orange / Black / White) */
-  --brand: #008cff;           /* Primary orange for CTAs and hover */
-  --brand-variant: #005ae0;   /* Slightly deeper orange for hover states */
+  --brand: #5087da;           /* Primary orange for CTAs and hover */
+  --brand-variant: #8dc2ec;   /* Slightly deeper orange for hover states */
   --accent: #000000;          /* Accent color (black) — used for header/footer) */
   --white: #ffffff;
 
@@ -27,7 +27,7 @@
   --accent: #000000;
 
   --bg-page: #000000;         /* deep black page background */
-  --bg-section: #0b0b0b;      /* slightly lighter panels so they separate from page */
+  --bg-section: #d0e4f7;      /* slightly lighter panels so they separate from page */
   --text: #ffffff;            /* white primary text on dark */
   --muted: #bfc7cf;           /* muted for long paragraphs in dark */
   --border: rgba(255,255,255,0.06);
