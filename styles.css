@@ -1,7 +1,7 @@
 :root {
   /* Core brand colors (Orange / Black / White) */
-  --brand: #ff6a00;           /* Primary orange for CTAs and hover */
-  --brand-variant: #e05500;   /* Slightly deeper orange for hover states */
+  --brand: #008cff;           /* Primary orange for CTAs and hover */
+  --brand-variant: #005ae0;   /* Slightly deeper orange for hover states */
   --accent: #000000;          /* Accent color (black) — used for header/footer) */
   --white: #ffffff;
 
@@ -22,8 +22,8 @@
 
 /* Dark theme overrides */
 [data-theme="dark"] {
-  --brand: #ff6a00;
-  --brand-variant: #e05500;
+  --brand: #008cff;
+  --brand-variant: #005ae0;
   --accent: #000000;
 
   --bg-page: #000000;         /* deep black page background */
