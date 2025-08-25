@@ -39,7 +39,7 @@ html, body {
 
 /* HEADER & NAV */
 .header {
-  background: linear-gradient(90deg, #20203c 0%, #333333 100%); /* Navy Blue gradient */
+  background: linear-gradient(90deg, #20203c 0%, #20203c 100%); /* Navy Blue gradient */
   color: #fff;
   padding-bottom: 2rem;
   border-radius: 0 0 2rem 2rem;
@@ -161,7 +161,7 @@ html, body {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--accent);
+  color: #fdd835;
   font-weight: 800;
   letter-spacing: 0.01em;
 }
@@ -354,7 +354,7 @@ section.services .service-card {
 
 /* FOOTER */
 .footer {
-  background: linear-gradient(90deg, #20203c, #333333);
+  background: linear-gradient(90deg, #20203c, #20203c);
   color: #fff;
   text-align: center;
   padding: 1.2rem 0;
@@ -579,7 +579,7 @@ section.services .service-card {
       font-style: normal;
       font-weight: 600;
       margin-top: 0.9rem;
-      color: var(--primary);
+      color: #000;
 }
 .faq-list {
       max-width: 800px;
@@ -596,10 +596,10 @@ section.services .service-card {
 .faq-question {
       font-weight: bold;
       margin-bottom: 0.4rem;
-      color: var(--primary);
+      color: #000;
 }
 section h2 {
-      color: var(--accent);
+      color: #fdd835;
 }
 [data-theme="dark"] section h2 {
       color: var(--primary);
