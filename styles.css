@@ -1,10 +1,10 @@
 :root {
   /* Core brand colors (Orange / Black / White) */
-  --brand: #5087da;           /* Primary orange for CTAs and hover */
-  --brand-variant: #8dc2ec;   /* Slightly deeper orange for hover states */
+  --brand: #4361ee;           /* Primary orange for CTAs and hover */
+  --brand-variant: #4895ef;   /* Slightly deeper orange for hover states */
   --accent: #000000;          /* Accent color (black) — used for header/footer) */
   --white: #ffffff;
-
+4361ee
   /* Light theme tokens (default) */
   --bg-page: var(--white);    /* page background */
   --bg-section: var(--white); /* cards and panels on light theme */
@@ -12,7 +12,7 @@
   --muted: #6b7280;           /* secondary/muted text on light */
   --border: #e6e6e6;
   --shadow: 0 6px 26px rgba(11,18,32,0.06);
-  --focus: rgba(255,106,0,0.18);
+  --focus: rgba(0, 55, 255, 0.18);
 
   /* Carousel indicators (light): inactive white with visible dark outline */
   --indicator-inactive: #ffffff;
@@ -22,17 +22,18 @@
 
 /* Dark theme overrides */
 [data-theme="dark"] {
-  --brand: #008cff;
-  --brand-variant: #005ae0;
+  --brand: #4361ee;
+  --brand-variant: #4895ef;
   --accent: #000000;
 
   --bg-page: #000000;         /* deep black page background */
-  --bg-section: #d0e4f7;      /* slightly lighter panels so they separate from page */
+  --bg-section: #393E46;      /* slightly lighter panels so they separate from page */
   --text: #ffffff;            /* white primary text on dark */
   --muted: #bfc7cf;           /* muted for long paragraphs in dark */
   --border: rgba(255,255,255,0.06);
-  --shadow: 0 10px 36px rgba(0,0,0,0.6);
-  --focus: rgba(255,106,0,0.22);
+  /*--shadow: 0 10px 36px rgb(156, 193, 244);*/
+  --shadow: 0 6px 26px rgba(11,18,32,0.06);
+  --focus: rgba(0, 55, 255, 0.18);
 
   /* Carousel indicators in dark: inactive white, active orange */
   --indicator-inactive: #ffffff;
